@@ -17,8 +17,8 @@
 
 - name: install ovs
   yum:
-    pkg=openvswitch
-    state=latest
+    pkg=openvswitch-2.5.0-2.el7.x86_64
+    state=present
   when: ansible_os_family == "RedHat"
   tags:
     - prebake-for-dev
